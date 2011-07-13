@@ -12,3 +12,12 @@ Installation:
 Upgrade all bundled plugins:
 
 	git submodule foreach git pull origin master
+
+
+Credits:
+
+	The general setup for my dotvim files comes from [1], making extensive
+	use of pathogen [2].
+
+[1]: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+[2]: http://www.vim.org/scripts/script.php?script_id=2332
