@@ -1,4 +1,4 @@
-Installation:
+## Installation
 
 	git clone git://github.com/jnwhiteh/dotvim.git ~/.vim
 	ln -s $HOME/.vim/vimrc $HOME/.vimrc
@@ -9,12 +9,12 @@ Installation:
 	cd bundle/command-t/ruby/command-t && ruby extconf.rb && make
 	cd $HOME/.vim
 
-Upgrade all bundled plugins:
+## Upgrade all bundled plugins
 
 	git submodule foreach git pull origin master
 
 
-Credits:
+## Credits
 
 	The general setup for my dotvim files comes from [1], making extensive
 	use of pathogen [2].
