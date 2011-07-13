@@ -1,8 +1,12 @@
 Installation:
 
 	git clone git://github.com/jnwhiteh/dotvim.git ~/.vim
-
-Create symlinks:
-
 	ln -s $HOME/.vim/vimrc $HOME/.vimrc
 	ln -s $HOME/.vim/gvimrc $HOME/.gvimrc
+	cd $HOME/.vim
+	git submodule init
+	git submodule update
+
+Upgrade all bundled plugins:
+
+	git submodule foreach git pull origin master

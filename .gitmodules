@@ -1,0 +1,72 @@
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git://github.com/msanders/snipmate.vim.git
+[submodule "bundle/textile"]
+	path = bundle/textile
+	url = git://github.com/timcharper/textile.vim.git
+[submodule "bundle/haml"]
+	path = bundle/haml
+	url = git://github.com/tpope/vim-haml.git
+[submodule "bundle/markdown"]
+	path = bundle/markdown
+	url = git://github.com/tpope/vim-markdown.git
+[submodule "bundle/vividchalk"]
+	path = bundle/vividchalk
+	url = git://github.com/tpope/vim-vividchalk.git
+[submodule "supertab"]
+	path = supertab
+	url = git://github.com/tsaleh/vim-supertab.git
+[submodule "bundle/tcomment"]
+	path = bundle/tcomment
+	url = git://github.com/tsaleh/vim-tcomment.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git://github.com/tsaleh/vim-supertab.git
+[submodule "bundle/erl"]
+	path = bundle/erl
+	url = git://github.com/jnwhiteh/vimerl.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = git://github.com/wincent/Command-T.git
+[submodule "bundle/golang"]
+	path = bundle/golang
+	url = git://github.com/jnwhiteh/vim-golang.git
+[submodule "bundle/wombat256"]
+	path = bundle/wombat256
+	url = git://github.com/vim-scripts/wombat256.vim.git
+[submodule "indexedsearch"]
+	path = indexedsearch
+	url = git://github.com/vim-scripts/IndexedSearch.git
+[submodule "bundle/gist"]
+	path = bundle/gist
+	url = git://github.com/vim-scripts/Gist.vim.git
+[submodule "bundle/trailing-whitespace"]
+	path = bundle/trailing-whitespace
+	url = git://github.com/bronson/vim-trailing-whitespace.git
+[submodule "bundle/vibrantink"]
+	path = bundle/vibrantink
+	url = git://github.com/vim-scripts/vibrantink.git
+[submodule "bundle/latex-suite"]
+	path = bundle/latex-suite
+	url = git://github.com/jnwhiteh/LaTeX-Suite-aka-Vim-LaTeX.git
+[submodule "nerdtree"]
+	path = nerdtree
+	url = git://github.com/vim-scripts/The-NERD-tree.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = git://github.com/jnwhiteh/taglist.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/vim-scripts/The-NERD-tree.git
+[submodule "bundle/easytags"]
+	path = bundle/easytags
+	url = git://github.com/xolox/vim-easytags.git
+[submodule "bundle/tagexplorer"]
+	path = bundle/tagexplorer
+	url = git://github.com/vim-scripts/tagexplorer.vim.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/solarized"]
+	path = bundle/solarized
+	url = git://github.com/tpope/vim-colors-solarized.git
