@@ -4,6 +4,7 @@ if has("macunix")
     set fuopt+=maxhorz
     macmenu &Edit.Find.Find\.\.\. key=<nop>
     map <D-f> :set invfu<CR>
+    vmap <Backspace> d
 
     set gfn=Monaco:h13				    " Set a nice font (Mac OS X only?)
 endif
