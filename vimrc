@@ -101,3 +101,5 @@ let g:easytags_cmd='/usr/local/bin/ctags'
 let TE_Ctags_Path='/usr/local/bin/ctags'
 let TE_Adjust_Winwidth=0
 nnoremap <leader>e :TagExplorer<CR>
+
+nnoremap <leader>u :GundoToggle<CR>
