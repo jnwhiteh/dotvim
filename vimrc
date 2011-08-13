@@ -1,8 +1,5 @@
 " Pathogen bundle setup, see http://bit.ly/c42N4y for more details
-filetype on
-filetype off
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 
 filetype on                         " enables filetype detection
 filetype plugin on                  " enables filetype specific plugins
