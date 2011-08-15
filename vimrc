@@ -71,6 +71,7 @@ au FileType markdown setlocal ai formatoptions+=cqrt comments=n:&gt;
 au FileType tex setlocal spell textwidth=78 formatoptions+=cqrt
 au FileType lua setlocal nu si tabstop=4 ruler laststatus=2 showmode noexpandtab formatoptions-=t textwidth=78 formatoptions+=c
 au FileType go setlocal nu si tabstop=4 ruler laststatus=2 showmode noexpandtab formatoptions-=t textwidth=78 formatoptions+=c
+au FileType lua setlocal nu si tabstop=4 ruler laststatus=2 showmode noexpandtab formatoptions-=t textwidth=78 formatoptions+=c
 au FileType erlang let g:erlangCompiler="erlc"
 
 " Add a shortcut for waf
