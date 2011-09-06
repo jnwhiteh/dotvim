@@ -36,6 +36,7 @@ set tabstop=4					" Set tab stops to be more manageable
 set shiftwidth=4				" Set autoindent width to 4
 set expandtab 					" Don't use tabs, use spaces instead
 set smarttab					" Turn on smart tabbing
+set switchbuf=usetab,newtab     " re-use a tab/window otherwise open a new taib
 
 " IMPORTANT: win32 users will need to have 'shellslash' set so that latex
 " can be called correctly.
