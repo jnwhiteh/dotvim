@@ -102,3 +102,7 @@ let TE_Adjust_Winwidth=0
 nnoremap <leader>e :TagExplorer<CR>
 
 nnoremap <leader>u :GundoToggle<CR>
+
+" Yank and paste to clipboard
+nmap <leader>y "*y
+nmap <leader>p "*p
