@@ -67,9 +67,6 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "bundle/solarized"]
-	path = bundle/solarized
-	url = git://github.com/tpope/vim-colors-solarized.git
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = git://github.com/vim-scripts/Gundo.git
