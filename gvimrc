@@ -7,4 +7,5 @@ if has("macunix")
     vmap <Backspace> d
 
     set gfn=Monaco:h13				    " Set a nice font (Mac OS X only?)
+    set showtabline=2
 endif
