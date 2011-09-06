@@ -53,7 +53,7 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
 
 let Tex_DefaultTargetFormat="pdf"
-let Tex_FoldedSections="%%fakesection"
+let Tex_FoldedSections="%%fakesection,subsection,subsubsection"
 let Tex_FoldedMisc="slide,preamble,<<<"
 
 " Toggle spell checking on and off with `,s`
