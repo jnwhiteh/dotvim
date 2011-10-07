@@ -11,3 +11,6 @@ if has("macunix")
     set showtabline=2 " Always show tabs, even when only one file open
     set cmdheight=2   " Make command window larger so we can see compile errors
 endif
+
+au FileType tex call GenerateLatexMenu()
+
