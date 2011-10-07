@@ -47,21 +47,10 @@ set shellslash
 " program to always generate a file-name.
 set grepprg=grep\ -nH\ $*
 
-" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
-" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
-" The following changes the default filetype back to 'tex':
-let g:tex_flavor='latex'
-
-let Tex_DefaultTargetFormat="pdf"
-let Tex_FoldedSections="%%fakesection,subsection,subsubsection"
-let Tex_FoldedMisc="slide,preamble,<<<"
-
 " Toggle spell checking on and off with `,s`
 nmap <silent> <leader>s :set spell!<CR>
 " Set region to British English
 set spelllang=en_gb
-
-nmap <silent> <leader>s :set spell!<CR>
 
 " Autocommand rules for a few common files
 au BufNewFile,BufRead *.txt,*.html,README,*.tex setlocal spell
