@@ -13,4 +13,3 @@ if has("macunix")
 endif
 
 au FileType tex call GenerateLatexMenu()
-

@@ -38,15 +38,6 @@ set expandtab 					" Don't use tabs, use spaces instead
 set smarttab					" Turn on smart tabbing
 set switchbuf=usetab,newtab     " re-use a tab/window otherwise open a new taib
 
-" IMPORTANT: win32 users will need to have 'shellslash' set so that latex
-" can be called correctly.
-set shellslash
-
-" IMPORTANT: grep will sometimes skip displaying the file name if you
-" search in a singe file. This will confuse Latex-Suite. Set your grep
-" program to always generate a file-name.
-set grepprg=grep\ -nH\ $*
-
 " Toggle spell checking on and off with `,s`
 nmap <silent> <leader>s :set spell!<CR>
 " Set region to British English

@@ -73,6 +73,3 @@
 [submodule "bundle/latexmenu"]
 	path = bundle/latexmenu
 	url = git://github.com/jnwhiteh/latexmenu.git
-[submodule "bundle/atp-latex"]
-	path = bundle/atp-latex
-	url = git://github.com/vim-scripts/AutomaticLaTexPlugin.git
