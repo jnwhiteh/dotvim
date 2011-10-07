@@ -103,6 +103,5 @@ nnoremap <leader>e :TagExplorer<CR>
 
 nnoremap <leader>u :GundoToggle<CR>
 
-" Yank and paste to clipboard
-nmap <leader>y "*y
-nmap <leader>p "*p
+" Custom status line
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
