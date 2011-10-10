@@ -73,3 +73,6 @@
 [submodule "bundle/latexmenu"]
 	path = bundle/latexmenu
 	url = git://github.com/jnwhiteh/latexmenu.git
+[submodule "bundle/latexbox"]
+	path = bundle/latexbox
+	url = git://github.com/vim-scripts/LaTeX-Box.git

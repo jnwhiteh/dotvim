@@ -29,6 +29,7 @@ set backupdir=$HOME/.vimbackups/
 
 " Set up a custom leader, so we actually use it
 let mapleader=","
+let maplocalleader=";"
 
 set smartindent                 		" Determine the correct tab level
 set autoindent					" Turn on automatic indenting
