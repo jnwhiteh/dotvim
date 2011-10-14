@@ -12,9 +12,5 @@ if has("macunix")
     set cmdheight=2   " Make command window larger so we can see compile errors
 endif
 
-au FileType tex call GenerateLatexMenu()
 let g:LatexBox_viewer="skim"
-
-" Add more bindings from https://github.com/vim-scripts/AutomaticLaTexPlugin/blob/master/ftplugin/ATP_files/mappings.vim
-imap ;em \emph{}<Left>
-imap ;tt \texttt{}<Left>
+let g:LatexBox_latexmk_options="-pvc"

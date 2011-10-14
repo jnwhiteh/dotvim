@@ -48,9 +48,11 @@ set spelllang=en_gb
 au BufNewFile,BufRead *.txt,*.html,README,*.tex setlocal spell
 au BufNewFile,BufRead wscript set filetype=python
 
+" Make sure .tex is interpreted as a 'latex' file
+let g:tex_flavor="latex"
+
 au FileType text setlocal textwidth=78
 au FileType markdown setlocal ai formatoptions+=cqrt comments=n:&gt;
-au FileType tex setlocal spell textwidth=78 formatoptions+=cqrt
 au FileType lua setlocal nu si tabstop=4 ruler laststatus=2 showmode noexpandtab formatoptions-=t textwidth=78 formatoptions+=c
 au FileType go setlocal nu si tabstop=4 ruler laststatus=2 showmode noexpandtab formatoptions-=t textwidth=78 formatoptions+=c
 au FileType lua setlocal nu si tabstop=4 ruler laststatus=2 showmode noexpandtab formatoptions-=t textwidth=78 formatoptions+=c
@@ -81,7 +83,6 @@ let g:easytags_cmd='/usr/local/bin/ctags'
 let TE_Ctags_Path='/usr/local/bin/ctags'
 let TE_Adjust_Winwidth=0
 nnoremap <leader>e :TagExplorer<CR>
-
 nnoremap <leader>u :GundoToggle<CR>
 
 " Custom status line
