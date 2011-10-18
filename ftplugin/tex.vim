@@ -1,7 +1,8 @@
 setlocal spell
 setlocal ai
-setlocal textwidth=78
-setlocal formatoptions+=cqrt
+"setlocal textwidth=78
+"setlocal formatoptions+=cqrt
+set linebreak
 silent! call GenerateLatexMenu()
 
 map <silent> <localleader>ls :silent !/Applications/Skim.app/Contents/SharedSupport/displayline <c-r>=line('.')<cr> "<c-r>=LatexBox_GetOutputFile()<cr>" "%:p"<cr>
