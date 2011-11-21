@@ -16,3 +16,4 @@ imap ;tt \texttt{}<Left>
 imap ;en \begin{enumerate}<cr><cr>\end{enumerate}<cr><Up><Up>    \item 
 imap ;it \begin{itemize}<cr><cr>\end{itemize}<cr><Up><Up>    \item 
 
+setlocal wildignore+=*.aux
