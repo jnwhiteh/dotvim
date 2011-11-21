@@ -11,5 +11,8 @@ map <silent> <localleader>ls :silent !/Applications/Skim.app/Contents/SharedSupp
 
 " Add more bindings from https://github.com/vim-scripts/AutomaticLaTexPlugin/blob/master/ftplugin/ATP_files/mappings.vim
 imap ;em \emph{}<Left>
+imap ;sf \textsf{}<Left>
 imap ;tt \texttt{}<Left>
+imap ;en \begin{enumerate}<cr><cr>\end{enumerate}<cr><Up><Up>    \item 
+imap ;it \begin{itemize}<cr><cr>\end{itemize}<cr><Up><Up>    \item 
 
