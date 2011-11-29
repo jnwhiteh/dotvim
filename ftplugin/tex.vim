@@ -15,5 +15,6 @@ imap ;sf \textsf{}<Left>
 imap ;tt \texttt{}<Left>
 imap ;en \begin{enumerate}<cr><cr>\end{enumerate}<cr><Up><Up>    \item 
 imap ;it \begin{itemize}<cr><cr>\end{itemize}<cr><Up><Up>    \item 
+imap ;qu ``''<Left><Left>
 
-setlocal wildignore+=*.aux
+setlocal wildignore+=*.aux,*.log,*.bbl,*.blg,*.pdf,*.fdb_latexmk,*.synctex.gz
