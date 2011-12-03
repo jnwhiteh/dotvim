@@ -1,4 +1,7 @@
-if has("macunix")
+if has("gui_gtk2")
+    " This is gvim on Linux
+    set gfn=Monospace\ 13
+elseif has("gui_mac")
     "Mac OS X specific options here
     " Grow to maximum horizontal width on full-screen mode
     set fuopt+=maxhorz
@@ -8,9 +11,14 @@ if has("macunix")
 
     set gfn=Monaco:h13				    " Set a nice font (Mac OS X only?)
 
-    set showtabline=2 " Always show tabs, even when only one file open
-    set cmdheight=2   " Make command window larger so we can see compile errors
+    let g:LatexBox_viewer="skim"
 endif
 
-let g:LatexBox_viewer="skim"
-" let g:LatexBox_latexmk_options="-pvc"
+set showtabline=2 " Always show tabs, even when only one file open
+set cmdheight=2   " Make command window larger so we can see compile errors
+
+set background=dark
+"colorscheme vividchalk	    		" Select a colorscheme
+colorscheme solarized
+
+

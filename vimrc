@@ -15,11 +15,6 @@ set incsearch					    " do incremental searching
 set mousehide					    " Hide the mouse when typing text
 set hlsearch					    " Turn on search pattern highlighting
 
-set background=dark
-"colorscheme vividchalk	    		" Select a colorscheme
-colorscheme solarized
-
-
 " Setup swapfile and backup file storage/rules
 silent execute '!mkdir -p "' . $HOME . '/.vimswapfiles"'
 silent execute '!mkdir -p "' . $HOME . '/.vimbackups"'
@@ -73,14 +68,20 @@ endif
 nnoremap <leader>d :NERDTreeToggle<cr>
 nnoremap <leader>f :NERDTreeFind<cr>
 
-let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+if has("unix")
+    let Ctags_Executable='/usr/bin/ctags'
+elseif has("macunix")
+    let Ctags_Executable='/usr/local/bin/ctags'
+endif
+
+let Tlist_Ctags_Cmd=Ctags_Executable
 let Tlist_Show_Menu=1
 let Tlist_Compact_Format=1
 let Tlist_Inc_Winwidth=0
 nnoremap <leader>l :TlistToggle<CR>
 
-let g:easytags_cmd='/usr/local/bin/ctags'
-let TE_Ctags_Path='/usr/local/bin/ctags'
+let g:easytags_cmd=Ctags_Executable
+let TE_Ctags_Path=Ctags_Executable
 let TE_Adjust_Winwidth=0
 nnoremap <leader>e :TagExplorer<CR>
 nnoremap <leader>u :GundoToggle<CR>
