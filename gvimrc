@@ -1,6 +1,8 @@
 if has("gui_gtk2")
     " This is gvim on Linux
-    set gfn=Monospace\ 13
+    set gfn=Monospace\ 11
+    imap <T-BS> <C-W> " Maps windows/super-backspace to delete previous word
+
 elseif has("gui_mac")
     "Mac OS X specific options here
     " Grow to maximum horizontal width on full-screen mode
