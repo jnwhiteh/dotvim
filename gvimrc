@@ -1,7 +1,8 @@
 if has("gui_gtk2")
     " This is gvim on Linux
     set gfn=Monospace\ 11
-    imap <T-BS> <C-W> " Maps windows/super-backspace to delete previous word
+    " Maps windows/super-backspace to delete previous word
+    imap <T-BS> <C-W>
 
 elseif has("gui_mac")
     "Mac OS X specific options here
