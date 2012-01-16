@@ -66,8 +66,10 @@ endif
 nnoremap <leader>d :NERDTreeToggle<cr>
 nnoremap <leader>f :NERDTreeFind<cr>
 
+" Since we have to use an altered version of ctags.
+" This can be found here: https://github.com/lyosha/ctags-go
 if has("unix")
-    let Ctags_Executable='/usr/bin/ctags'
+    let Ctags_Executable='/usr/local/bin/ctags'
 elseif has("macunix")
     let Ctags_Executable='/usr/local/bin/ctags'
 endif
