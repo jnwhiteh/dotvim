@@ -53,9 +53,7 @@ au FileType go setlocal nu si tabstop=4 ruler laststatus=2 showmode noexpandtab 
 au FileType lua setlocal nu si tabstop=4 ruler laststatus=2 showmode noexpandtab formatoptions-=t textwidth=78 formatoptions+=c
 au FileType erlang let g:erlangCompiler="erlc"
 
-" Add a shortcut for waf
-command -nargs=* Waf !python waf <args>
-command -nargs=* Make Waf <args>
+" Change to the current file's directory
 command -nargs=0 Cd cd %:p:h
 
 if has("autocmd") && exists("+omnifunc")
