@@ -84,7 +84,11 @@ let g:easytags_cmd=Ctags_Executable
 let TE_Ctags_Path=Ctags_Executable
 let TE_Adjust_Winwidth=0
 nnoremap <leader>e :TagExplorer<CR>
+
 nnoremap <leader>u :GundoToggle<CR>
+
+" Map control-backspace to delete previous word
+imap <C-BS> <C-W>
 
 " Custom status line
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
