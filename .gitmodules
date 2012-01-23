@@ -16,9 +16,6 @@
 [submodule "supertab"]
 	path = supertab
 	url = git://github.com/tsaleh/vim-supertab.git
-[submodule "bundle/tcomment"]
-	path = bundle/tcomment
-	url = git://github.com/tsaleh/vim-tcomment.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git://github.com/tsaleh/vim-supertab.git
