@@ -75,7 +75,7 @@ elseif has("macunix")
 endif
 
 let Tlist_Ctags_Cmd=Ctags_Executable
-let Tlist_Show_Menu=1
+let Tlist_Show_Menu=0
 let Tlist_Compact_Format=1
 let Tlist_Inc_Winwidth=0
 nnoremap <leader>l :TlistToggle<CR>
