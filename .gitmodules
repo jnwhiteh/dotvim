@@ -76,3 +76,6 @@
 [submodule "bundle/latexbox"]
 	path = bundle/latexbox
 	url = git://github.com/vim-scripts/LaTeX-Box.git
+[submodule "bundle/vimoutliner"]
+	path = bundle/vimoutliner
+	url = git://github.com/vimoutliner/vimoutliner.git

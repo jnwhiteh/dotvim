@@ -17,8 +17,11 @@ endif
 imap ;em \emph{}<Left>
 imap ;sf \textsf{}<Left>
 imap ;tt \texttt{}<Left>
-imap ;en \begin{enumerate}<cr><cr>\end{enumerate}<cr><Up><Up>    \item
-imap ;it \begin{itemize}<cr><cr>\end{itemize}<cr><Up><Up>    \item
+imap ;en \begin{enumerate}<cr><cr>\end{enumerate}<cr><Up><Up>    \item 
+imap ;it \begin{itemize}<cr><cr>\end{itemize}<cr><Up><Up>    \item 
+imap ;de \begin{description}<cr><cr>\end{description}<cr><Up><Up>    \item[] <Left><Left>
+imap ;fi \begin{figure}<cr>\begin{center}<cr>\includegraphics{}<cr>\end{center}<cr>\caption{}<cr>\label{fig:}<cr>\end{figure}<cr>
+
 imap ;qu ``''<Left><Left>
 
 setlocal wildignore+=*.aux,*.log,*.bbl,*.blg,*.pdf,*.fdb_latexmk,*.synctex.gz
