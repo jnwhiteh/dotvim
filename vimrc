@@ -81,6 +81,7 @@ let Tlist_Inc_Winwidth=0
 nnoremap <leader>l :TlistToggle<CR>
 
 let g:easytags_cmd=Ctags_Executable
+let g:easytags_updatetime_autodisable=1
 let TE_Ctags_Path=Ctags_Executable
 let TE_Adjust_Winwidth=0
 nnoremap <leader>e :TagExplorer<CR>
