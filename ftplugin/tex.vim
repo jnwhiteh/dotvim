@@ -10,7 +10,9 @@ autocmd BufEnter,BufWinEnter <buffer> silent! call GenerateLatexMenu()
 if has("macunx")
     map <silent> <localleader>ls :silent !/Applications/Skim.app/Contents/SharedSupport/displayline <c-r>=line('.')<cr> "<c-r>=LatexBox_GetOutputFile()<cr>" "%:p"<cr>
 elseif has("unix")
-    map <silent> <localleader>ls :silent !/usr/bin/python /home/jnwhiteh/.vim/evince_vim_dbus.py EVINCE "<c-r>=LatexBox_GetOutputFile()<cr>" <c-r>=line('.')<cr> "%:p"<cr>
+    " This is the old method that used evince_vim_dbus.py
+"    map <silent> <localleader>ls :silent !/usr/bin/python /home/jnwhiteh/.vim/evince_vim_dbus.py EVINCE "<c-r>=LatexBox_GetOutputFile()<cr>" <c-r>=line('.')<cr> "%:p"<cr>
+    map <silent> <localleader>ls :call EVS_Sync()<CR>
 endif
 
 " Add more bindings from https://github.com/vim-scripts/AutomaticLaTexPlugin/blob/master/ftplugin/ATP_files/mappings.vim
