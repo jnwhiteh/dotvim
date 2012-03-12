@@ -54,6 +54,9 @@ au FileType go setlocal makeprg=go\ install\ %:h
 au FileType lua setlocal nu si tabstop=4 ruler laststatus=2 showmode noexpandtab formatoptions-=t textwidth=78 formatoptions+=c
 au FileType erlang let g:erlangCompiler="erlc"
 
+set laststatus=2
+set showmode
+
 " Change to the current file's directory
 command -nargs=0 Cd cd %:p:h
 
