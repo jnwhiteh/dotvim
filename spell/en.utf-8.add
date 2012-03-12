@@ -5,3 +5,6 @@ mutexes
 MINIX
 ramdisk
 microkernel
+inodes
+struct
+mutex
