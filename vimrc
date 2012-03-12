@@ -50,6 +50,7 @@ au FileType text setlocal textwidth=78
 au FileType markdown setlocal ai formatoptions+=cqrt comments=n:&gt;
 au FileType lua setlocal nu si tabstop=4 ruler laststatus=2 showmode noexpandtab formatoptions-=t textwidth=78 formatoptions+=c
 au FileType go setlocal nu si tabstop=4 ruler laststatus=2 showmode noexpandtab formatoptions-=t textwidth=78 formatoptions+=c
+au FileType go setlocal makeprg=go\ install\ %:h
 au FileType lua setlocal nu si tabstop=4 ruler laststatus=2 showmode noexpandtab formatoptions-=t textwidth=78 formatoptions+=c
 au FileType erlang let g:erlangCompiler="erlc"
 
