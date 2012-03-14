@@ -26,4 +26,8 @@ imap ;fi \begin{figure}<cr>\begin{center}<cr>\includegraphics{}<cr>\end{center}<
 
 imap ;qu ``''<Left><Left>
 
+" Set up arrow keys so they function in soft-line mode
+map <buffer> <Up> g<Up>
+map <buffer> <Down> g<Down>
+
 setlocal wildignore+=*.aux,*.log,*.bbl,*.blg,*.pdf,*.fdb_latexmk,*.synctex.gz
