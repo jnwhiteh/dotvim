@@ -56,6 +56,7 @@ au FileType erlang let g:erlangCompiler="erlc"
 
 set laststatus=2
 set showmode
+set nu
 
 " Change to the current file's directory
 command -nargs=0 Cd cd %:p:h
