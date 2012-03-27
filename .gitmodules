@@ -76,3 +76,9 @@
 [submodule "bundle/vimoutliner"]
 	path = bundle/vimoutliner
 	url = git://github.com/vimoutliner/vimoutliner.git
+[submodule "bundle/webapi-vim"]
+	path = bundle/webapi-vim
+	url = git://github.com/mattn/webapi-vim.git
+[submodule "bundle/goplayground-vim"]
+	path = bundle/goplayground-vim
+	url = git://github.com/mattn/goplayground-vim.git
