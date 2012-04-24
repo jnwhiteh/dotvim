@@ -111,3 +111,6 @@ augroup resCur
   autocmd!
   autocmd BufWinEnter * call ResCur()
 augroup END
+
+set t_Co=256
+colorscheme Monokai

@@ -19,8 +19,7 @@ endif
 set showtabline=2 " Always show tabs, even when only one file open
 set cmdheight=2   " Make command window larger so we can see compile errors
 
-set background=dark
+"set background=dark
 "colorscheme vividchalk	    		" Select a colorscheme
-colorscheme solarized
-
-
+"colorscheme solarized
+colorscheme Monokai
