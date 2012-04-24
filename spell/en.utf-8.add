@@ -9,3 +9,4 @@ inodes
 struct
 mutex
 inode
+inlining
