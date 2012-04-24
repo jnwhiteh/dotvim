@@ -82,3 +82,6 @@
 [submodule "bundle/goplayground-vim"]
 	path = bundle/goplayground-vim
 	url = git://github.com/mattn/goplayground-vim.git
+[submodule "bundle/vim-monokai"]
+	path = bundle/vim-monokai
+	url = git://github.com/sickill/vim-monokai.git
