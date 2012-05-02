@@ -6,7 +6,6 @@
     cd $HOME/.vim
     git submodule init
     git submodule update
-    cd bundle/command-t/ruby/command-t && ruby extconf.rb && make
     cd $HOME/.vim
 
 ## Upgrade all bundled plugins
@@ -14,7 +13,6 @@
     git submodule init
     git submodule update
     git submodule foreach git pull origin master
-    pushd bundle/command-t/ruby/command-t && ruby extconf.rb && make && popd
 
 
 ## Credits

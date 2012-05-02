@@ -22,9 +22,6 @@
 [submodule "bundle/erl"]
 	path = bundle/erl
 	url = git://github.com/jnwhiteh/vimerl.git
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://github.com/wincent/Command-T.git
 [submodule "bundle/golang"]
 	path = bundle/golang
 	url = git://github.com/jnwhiteh/vim-golang.git
@@ -85,3 +82,6 @@
 [submodule "bundle/vim-monokai"]
 	path = bundle/vim-monokai
 	url = git://github.com/sickill/vim-monokai.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
