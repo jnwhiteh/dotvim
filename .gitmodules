@@ -67,9 +67,6 @@
 [submodule "bundle/latexmenu"]
 	path = bundle/latexmenu
 	url = git://github.com/jnwhiteh/latexmenu.git
-[submodule "bundle/latexbox"]
-	path = bundle/latexbox
-	url = git://github.com/vim-scripts/LaTeX-Box.git
 [submodule "bundle/vimoutliner"]
 	path = bundle/vimoutliner
 	url = git://github.com/vimoutliner/vimoutliner.git
@@ -85,3 +82,6 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/latexbox"]
+	path = bundle/latexbox
+	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git
