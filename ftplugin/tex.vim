@@ -33,3 +33,12 @@ inoremap <buffer> <silent> <Down> <C-R>=pumvisible() ? "\<lt>Down>" : "\<lt>C-O>
 inoremap <buffer> <silent> <Up> <C-R>=pumvisible() ? "\<lt>Up>" : "\<lt>C-O>gk"<CR>
 
 setlocal wildignore+=*.aux,*.log,*.bbl,*.blg,*.pdf,*.fdb_latexmk,*.synctex.gz
+
+function! WC()
+    let filename = LatexBox_GetMainTexFile()
+    let cmd = "detex " . filename . " | wc -w | tr -d [:space:]"
+    let result = system(cmd)
+    echo result . " words"
+endfunction
+
+map <buffer> <F3> :call WC()<CR>
