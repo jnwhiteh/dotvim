@@ -26,12 +26,18 @@ imap ;fi \begin{figure}<cr>\begin{center}<cr>\includegraphics{}<cr>\end{center}<
 
 imap ;qu ``''<Left><Left>
 
-" Set up arrow keys so they function in soft-line mode
-nmap <buffer> <Up> g<Up>
-nmap <buffer> <Down> g<Down>
+" Set up arrow keys (and end/home so they function in soft-line mode
+noremap <buffer> <Up> g<Up>
+noremap <buffer> <Down> g<Down>
+noremap <buffer> <End> g<End>
+noremap <buffer> <Home> g<Home>
+
 inoremap <buffer> <silent> <Down> <C-R>=pumvisible() ? "\<lt>Down>" : "\<lt>C-O>gj"<CR>
 inoremap <buffer> <silent> <Up> <C-R>=pumvisible() ? "\<lt>Up>" : "\<lt>C-O>gk"<CR>
+inoremap <buffer> <silent> <Home> <C-R>=pumvisible() ? "\<lt>Home>" : "\<lt>C-O>g0"<CR>
+inoremap <buffer> <silent> <End> <C-R>=pumvisible() ? "\<lt>End>" : "\<lt>C-O>g$"<CR>
 
+" Ignore the dirty latex files
 setlocal wildignore+=*.aux,*.log,*.bbl,*.blg,*.pdf,*.fdb_latexmk,*.synctex.gz
 
 function! WC()
