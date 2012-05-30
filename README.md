@@ -20,9 +20,8 @@
     The general setup for my dotvim files comes from [1], making extensive
     use of pathogen [2].
 
-    The evince_vim_dbus.py script included for Ubuntu has been altered from the
-    gedit synctex plugin by viscious, obtained at [3].
+    The tex_evinceSync.vim plugin comes from [3], and works fantastically. In order for it to work, you will need to create a file named main.tex.latexmain so the plugin can determine which file is the 'main' LaTeX file.
 
 [1]: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 [2]: http://www.vim.org/scripts/script.php?script_id=2332
-[3]: http://jlebl.wordpress.com/2011/01/13/vim-evince-and-forward-and-backward-latex-synctex-search/
+[3]: https://github.com/peder2tm/sved
