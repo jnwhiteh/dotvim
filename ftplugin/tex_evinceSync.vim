@@ -3,11 +3,11 @@
 " Maintainer:   Peter B. Jørgensen <peterbjorgensen@gmail.com>
 " License:  This file is licensed under the BEER-WARE license rev 42.
 "   THE BEER-WARE LICENSE" (Revision 42):
-"   <peterbjorgensen@gmail.com> wrote this file. 
+"   <peterbjorgensen@gmail.com> wrote this file.
 "   As long as you retain this notice you can do whatever you want with this stuff.
 "   If we meet some day, and you think this stuff is worth it, you can buy me a beer in return.
 
-if exists("g:loaded_evinceSync") || !has("gui_running")
+if exists("g:loaded_evinceSync") || !has("gui_running") || has("gui_macvim")
     finish
 endif
 let g:loaded_evinceSync = 1
@@ -45,7 +45,7 @@ DBusGMainLoop(set_as_default=True)
 
 class EvinceSync:
     """A DBus proxy for an Evince Window"""
-    
+
     def __init__(self, debug=False):
         self.bus = None
         self.daemon = None
@@ -60,7 +60,7 @@ class EvinceSync:
     def init_connection(self):
         """Connect to session bus and daemon"""
         if self.bus is None:
-            try: 
+            try:
                 self.connect_bus()
             except dbus.DBusException:
                 print_exc()
@@ -111,7 +111,7 @@ class EvinceSync:
 
     def on_sync_source(self, input_file, source_link, timestamp):
         """Handle SyncSource signal from evince.Window"""
-        self.debug( "on_sync_source received: %s %s" 
+        self.debug( "on_sync_source received: %s %s"
                 % (input_file, source_link) )
         #find uri separator
         index = input_file.find("://")
@@ -154,13 +154,13 @@ class EvinceSync:
             window_proxy = self.bus.get_object(self.evince_name, window_path)
             self.debug("handle_get_window_list_reply: calling SyncView %s %s" %
                 (source_file, data) )
-            window_proxy.SyncView(source_file, data, 0, 
+            window_proxy.SyncView(source_file, data, 0,
                         dbus_interface="org.gnome.evince.Window")
         else:
             self.debug("handle_get_window_list_reply: empty sync" +
                     " queue or window list")
             self.sync_queue = []
-        
+
 
     def handle_get_window_list_error(self, err):
         self.debug("handle_get_window_list_error: "
@@ -174,12 +174,12 @@ class EvinceSync:
 
     def debug_dummy(self, s):
         pass
-        
+
     def get_pdf_file_uri(self, source_file):
         """Find mainfile of latex project - expect the use
         of *.latexmain. Returns:
-            * pdf file uri 
-            * source_file with '/.' added at the main file location 
+            * pdf file uri
+            * source_file with '/.' added at the main file location
                 (TexLive 2011 workaround)"""
         path = vim.current.buffer.name
         if path is None:
@@ -193,13 +193,13 @@ class EvinceSync:
         pdffile = None
         for name in mainfile:
             #Remove .latexmain
-            filepath = name.rpartition(".")[0] 
+            filepath = name.rpartition(".")[0]
             if os.path.exists(filepath + ".pdf"):
                 pdffile = "file://" + urllib.quote(filepath) + ".pdf"
                 break
             self.debug("get_pdf_file_uri: No pdf at: " + filepath + ".pdf")
             #Remove .tex
-            filepath = filepath.rpartition(".")[0] 
+            filepath = filepath.rpartition(".")[0]
             if os.path.exists(filepath + ".pdf"):
                 pdffile = "file://" + urllib.quote(filepath) + ".pdf"
                 break
