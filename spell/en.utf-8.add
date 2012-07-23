@@ -10,3 +10,7 @@ struct
 mutex
 inode
 inlining
+metadata
+FreeBSD
+FS
+namespace
