@@ -48,3 +48,5 @@ function! WC()
 endfunction
 
 map <buffer> <F3> :call WC()<CR>
+" Reformat a paragraph into one-sentence-per-line form
+" vip:'<,'>s/\n/ /|'<,'>s/\([.?!]\)\s/\1\r/g
