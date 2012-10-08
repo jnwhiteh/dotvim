@@ -7,7 +7,7 @@ silent! call GenerateLatexMenu()
 
 autocmd BufEnter,BufWinEnter <buffer> silent! call GenerateLatexMenu()
 
-if has("macunx")
+if has("gui_macvim")
     map <silent> <localleader>ls :silent !/Applications/Skim.app/Contents/SharedSupport/displayline <c-r>=line('.')<cr> "<c-r>=LatexBox_GetOutputFile()<cr>" "%:p"<cr>
 elseif has("unix")
     " This is the old method that used evince_vim_dbus.py
