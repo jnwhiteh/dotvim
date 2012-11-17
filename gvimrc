@@ -16,6 +16,9 @@ elseif has("gui_gtk2")
     imap <T-BS> <C-W>
 endif
 
+
+let g:LatexBox_quickfix=0
+
 set showtabline=2 " Always show tabs, even when only one file open
 set cmdheight=2   " Make command window larger so we can see compile errors
 
