@@ -2,7 +2,6 @@
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-filetype plugin indent on
 
 Bundle "msanders/snipmate.vim"
 Bundle "timcharper/textile.vim"
@@ -34,19 +33,10 @@ Bundle "kien/ctrlp.vim"
 Bundle "LaTeX-Box-Team/LaTeX-Box"
 Bundle "tpope/vim-sensible"
 
-filetype on                         " enables filetype detection
-filetype plugin on                  " enables filetype specific plugins
-filetype indent on                  " Thie enables automatic indentation
+filetype plugin indent on
 syntax on
 
-set nocompatible				    " Break compatibility with old versions
-set backspace=indent,eol,start		" Backspace over anything in insert mode
-set history=50					    " keep 50 lines of command line history
-set ruler					        " show the cursor position all the time
-set showcmd					        " display incomplete commands
-set incsearch					    " do incremental searching
 set mousehide					    " Hide the mouse when typing text
-set hlsearch					    " Turn on search pattern highlighting
 
 " Setup swapfile and backup file storage/rules
 silent execute '!mkdir -p "' . $HOME . '/.vimswapfiles"'
@@ -60,7 +50,6 @@ let mapleader=","
 let maplocalleader=";"
 
 set smartindent                 		" Determine the correct tab level
-set autoindent					" Turn on automatic indenting
 set tabstop=4					" Set tab stops to be more manageable
 set shiftwidth=4				" Set autoindent width to 4
 set expandtab 					" Don't use tabs, use spaces instead
@@ -87,9 +76,8 @@ au FileType go setlocal makeprg=go\ install\ %:h
 au FileType lua setlocal nu si tabstop=4 ruler laststatus=2 showmode noexpandtab formatoptions-=t textwidth=78 formatoptions+=c
 au FileType erlang let g:erlangCompiler="erlc"
 
-set laststatus=2
 set showmode
-set nu
+set number
 
 " Change to the current file's directory
 command -nargs=0 Cd cd %:p:h
