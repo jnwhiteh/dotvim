@@ -122,3 +122,5 @@ cnoremap <C-A>  <C-C>gggH<C-O>G
 onoremap <C-A>  <C-C>gggH<C-O>G
 snoremap <C-A>  <C-C>gggH<C-O>G
 xnoremap <C-A>  <C-C>ggVG
+
+set colorcolumn=80
