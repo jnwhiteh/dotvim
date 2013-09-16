@@ -85,3 +85,6 @@
 [submodule "bundle/latexbox"]
 	path = bundle/latexbox
 	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git
+[submodule "bundle/sensible"]
+	path = bundle/sensible
+	url = git://github.com/tpope/vim-sensible.git
