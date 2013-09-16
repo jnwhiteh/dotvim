@@ -1,5 +1,38 @@
-" Pathogen bundle setup, see http://bit.ly/c42N4y for more details
-call pathogen#infect()
+" Vundle setup and initialisation (required)
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+filetype plugin indent on
+
+Bundle "msanders/snipmate.vim"
+Bundle "timcharper/textile.vim"
+Bundle "tpope/vim-haml"
+Bundle "tpope/vim-markdown"
+Bundle "tpope/vim-vividchalk"
+Bundle "tsaleh/vim-supertab"
+Bundle "jnwhiteh/vimerl"
+Bundle "jnwhiteh/vim-golang"
+Bundle "vim-scripts/wombat256.vim"
+Bundle "vim-scripts/IndexedSearch"
+Bundle "vim-scripts/Gist.vim"
+Bundle "bronson/vim-trailing-whitespace"
+Bundle "vim-scripts/vibrantink"
+Bundle "vim-scripts/The-NERD-tree"
+Bundle "jnwhiteh/taglist.vim"
+Bundle "xolox/vim-misc"
+Bundle "xolox/vim-easytags"
+Bundle "vim-scripts/tagexplorer.vim"
+Bundle "tpope/vim-fugitive"
+Bundle "vim-scripts/Gundo"
+Bundle "vim-scripts/Solarized"
+Bundle "jnwhiteh/latexmenu"
+Bundle "vimoutliner/vimoutliner"
+Bundle "mattn/webapi-vim"
+Bundle "mattn/goplayground-vim"
+Bundle "sickill/vim-monokai"
+Bundle "kien/ctrlp.vim"
+Bundle "LaTeX-Box-Team/LaTeX-Box"
+Bundle "tpope/vim-sensible"
 
 filetype on                         " enables filetype detection
 filetype plugin on                  " enables filetype specific plugins
