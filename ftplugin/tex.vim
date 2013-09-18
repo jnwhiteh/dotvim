@@ -38,7 +38,7 @@ inoremap <buffer> <silent> <Home> <C-R>=pumvisible() ? "\<lt>Home>" : "\<lt>C-O>
 inoremap <buffer> <silent> <End> <C-R>=pumvisible() ? "\<lt>End>" : "\<lt>C-O>g$"<CR>
 
 " Ignore the dirty latex files
-setlocal wildignore+=*.aux,*.log,*.bbl,*.blg,*.pdf,*.fdb_latexmk,*.synctex.gz
+setlocal wildignore+=*.aux,*.log,*.bbl,*.blg,*.pdf,*.fls,*.fdb_latexmk,*.synctex.gz
 
 function! WC()
     let filename = LatexBox_GetMainTexFile()

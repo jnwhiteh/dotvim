@@ -68,6 +68,7 @@ au BufNewFile,BufRead wscript set filetype=python
 
 " Make sure .tex is interpreted as a 'latex' file
 let g:tex_flavor="latex"
+let g:LatexBox_latexmk_async=1
 
 au FileType text setlocal textwidth=78
 au FileType markdown setlocal ai formatoptions+=cqrt comments=n:&gt;
@@ -93,26 +94,8 @@ endif
 nnoremap <leader>d :NERDTreeToggle<cr>
 nnoremap <leader>f :NERDTreeFind<cr>
 
-" Since we have to use an altered version of ctags.
-" This can be found here: https://github.com/lyosha/ctags-go
-if has("unix")
-    let Ctags_Executable='/usr/local/bin/ctags'
-elseif has("macunix")
-    let Ctags_Executable='/usr/local/bin/ctags'
-endif
-
-let Tlist_Ctags_Cmd=Ctags_Executable
-let Tlist_Show_Menu=0
-let Tlist_Compact_Format=1
-let Tlist_Inc_Winwidth=0
 nnoremap <leader>l :TlistToggle<CR>
-
-let g:easytags_cmd=Ctags_Executable
-let g:easytags_updatetime_autodisable=1
-let TE_Ctags_Path=Ctags_Executable
-let TE_Adjust_Winwidth=0
 nnoremap <leader>e :TagExplorer<CR>
-
 nnoremap <leader>u :GundoToggle<CR>
 
 " Map control-backspace to delete previous word
@@ -135,7 +118,6 @@ augroup resCur
 augroup END
 
 set t_Co=256
-colorscheme Monokai
 
 " Set Control-A to select all in the file
 noremap  <C-A>  gggH<C-O>G
