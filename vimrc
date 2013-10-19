@@ -33,6 +33,8 @@ Bundle "fholgado/Molokai2"
 Bundle "kien/ctrlp.vim"
 Bundle "LaTeX-Box-Team/LaTeX-Box"
 Bundle "tpope/vim-sensible"
+Bundle "bling/vim-airline"
+Bundle "scrooloose/syntastic"
 
 filetype plugin indent on
 syntax on
