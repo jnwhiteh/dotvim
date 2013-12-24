@@ -36,6 +36,7 @@ Bundle "tpope/vim-sensible"
 Bundle "bling/vim-airline"
 Bundle "scrooloose/syntastic"
 Bundle "rodjek/vim-puppet"
+Bundle "gregsexton/gitv"
 
 filetype plugin indent on
 syntax on
