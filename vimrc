@@ -81,6 +81,8 @@ au FileType go setlocal nu si tabstop=4 ruler laststatus=2 showmode noexpandtab 
 au FileType go setlocal makeprg=go\ install\ %:h
 au FileType lua setlocal nu si tabstop=4 ruler laststatus=2 showmode noexpandtab formatoptions-=t textwidth=78 formatoptions+=c
 au FileType erlang let g:erlangCompiler="erlc"
+" Always start on the first line of a commit message
+au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
 
 set showmode
 set number
