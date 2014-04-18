@@ -37,6 +37,7 @@ Bundle "bling/vim-airline"
 Bundle "scrooloose/syntastic"
 Bundle "rodjek/vim-puppet"
 Bundle "gregsexton/gitv"
+Bundle "laktek/distraction-free-writing-vim"
 
 filetype plugin indent on
 syntax on
@@ -138,3 +139,10 @@ if exists('+colorcolumn')
 else
     au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
+
+colorscheme Molokai2
+
+let g:fullscreen_colorscheme = "iawriter"
+let g:fullscreen_font = "Cousine:h14"
+let g:normal_colorscheme = "Molokai2"
+let g:normal_font="Monaco:h13"

@@ -26,4 +26,4 @@ set cmdheight=2   " Make command window larger so we can see compile errors
 "colorscheme vividchalk	    		" Select a colorscheme
 "colorscheme solarized
 "colorscheme solarized
-colorscheme Molokai2
+
