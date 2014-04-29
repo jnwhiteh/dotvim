@@ -12,9 +12,9 @@
 
 ## Credits
 
-    The general setup for my dotvim files comes from [1]
+The general setup for my dotvim files comes from [1]
 
-    The tex_evinceSync.vim plugin comes from [3], and works fantastically. In order for it to work, you will need to create a file named main.tex.latexmain so the plugin can determine which file is the 'main' LaTeX file.
+The tex_evinceSync.vim plugin comes from [3], and works fantastically. In order for it to work, you will need to create a file named main.tex.latexmain so the plugin can determine which file is the 'main' LaTeX file.
 
 [1]: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 [3]: https://github.com/peder2tm/sved
