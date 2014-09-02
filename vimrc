@@ -38,6 +38,10 @@ Bundle "rodjek/vim-puppet"
 Bundle "gregsexton/gitv"
 Bundle "laktek/distraction-free-writing-vim"
 Bundle "vim-scripts/SpellCheck"
+Bundle "kien/rainbow_parentheses.vim"
+Bundle "guns/vim-clojure-static"
+Bundle "pangloss/vim-javascript"
+Bundle "chikamichi/mediawiki.vim"
 
 filetype plugin indent on
 syntax on
