@@ -4,11 +4,11 @@
     ln -s $HOME/.vim/vimrc $HOME/.vimrc
     ln -s $HOME/.vim/gvimrc $HOME/.gvimrc
     cd $HOME/.vim
-    git clone https://github.com/gmarik/vundle.git bundle/vundle
+    git clone https://github.com/gmarik/Vundle.vim.git bundle/Vundle.vim
 
 ## Upgrade and install bundles
 
-    :BundleInstall!
+    :PluginInstall!
 
 ## Credits
 

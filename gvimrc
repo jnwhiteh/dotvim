@@ -21,9 +21,4 @@ let g:LatexBox_quickfix=0
 
 set showtabline=2 " Always show tabs, even when only one file open
 set cmdheight=2   " Make command window larger so we can see compile errors
-
-"set background=dark
-"colorscheme vividchalk	    		" Select a colorscheme
-"colorscheme solarized
-"colorscheme solarized
-
+set mousehide					    " Hide the mouse when typing text
