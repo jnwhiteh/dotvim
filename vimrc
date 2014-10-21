@@ -156,3 +156,6 @@ au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
 au FileType go nmap <Leader>ds <Plug>(go-def-split)
 
 let g:go_fmt_command = "goimports"
+
+" Only enable for certain languages
+let g:ycm_filetype_whitelist = {'go': 1, 'python': 1}
