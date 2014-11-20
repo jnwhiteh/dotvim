@@ -5,6 +5,8 @@
     ln -s $HOME/.vim/gvimrc $HOME/.gvimrc
     cd $HOME/.vim
     git clone https://github.com/gmarik/Vundle.vim.git bundle/Vundle.vim
+    vim +PluginInstall +qall
+
 
 ## Upgrade and install bundles
 
