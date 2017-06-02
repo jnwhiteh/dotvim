@@ -8,12 +8,12 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'fatih/vim-go'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'ChrisKempson/Tomorrow-Theme', {'rtp': 'vim/'}
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-scripts/The-NERD-tree'
 Plugin 'majutsushi/tagbar'
 Plugin 'kien/ctrlp.vim'
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'zchee/deoplete-go'
 
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'tpope/vim-sensible'
@@ -22,6 +22,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/SpellCheck'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/rainbow_parentheses.vim'
+
+Plugin 'ChrisKempson/Tomorrow-Theme', {'rtp': 'vim/'}
 
 " End the Vundle initialization and return to normal
 call vundle#end()          " required
@@ -159,3 +161,5 @@ let g:go_fmt_command = "goimports"
 
 " Only enable for certain languages
 let g:ycm_filetype_whitelist = {'go': 1, 'python': 1}
+
+let g:deoplete#enable_at_startup = 1
